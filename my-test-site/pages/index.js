@@ -1,12 +1,17 @@
 import Button from '@material-ui/core/Button';
+import { useTheme } from '@material-ui/core/styles';
 
+export default function Home({toggleTheme}) {
+  const theme  = useTheme();
 
-export default function Home() {
   return (
-    <div>
-    <Button variant="contained" color="primary">
-      Hello World
+    <div className='flex' style={{backgroundColor: theme.palette.secondary.main}}>
+    <Button variant="contained" color="primary" onClick = {toggleTheme}>
+      Switch Theme
     </Button>
+
+
+    <div style={{height:'100px', width:'200px'}}/>
     </div>
   )
 }
