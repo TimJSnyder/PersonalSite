@@ -1,7 +1,7 @@
 import _cloneDeep from 'lodash.clonedeep'
 
 const initialState = {
-    theme: 'light'
+    theme: 'dark'
 }
 
     const basicReducer = (state = initialState, {type, payload}) => {
@@ -15,7 +15,7 @@ const initialState = {
 
             return newState
 
-            
+
         default:
             return state;
         }
