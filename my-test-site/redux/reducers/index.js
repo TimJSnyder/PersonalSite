@@ -1,4 +1,4 @@
-import _cloneDeep from 'lodash.clonedeep'
+import cloneDeep from 'lodash.clonedeep'
 
 const initialState = {
     theme: 'dark'
@@ -10,7 +10,7 @@ const initialState = {
     switch(type) {
         case 'TOGGLE_THEME':
             newState = cloneDeep(state);
-
+            
             newState.theme = state.theme === 'light' ? 'dark' : 'light'
 
             return newState

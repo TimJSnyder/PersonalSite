@@ -1,7 +1,7 @@
 import { ThemeProvider } from '@material-ui/core/styles';
 import lightTheme from '../styles/themes/light-theme'
 import darkTheme from '../styles/themes/dark-theme'
-import { Provider, useStore } from 'react-redux'
+import { Provider, useSelector } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
 
 
@@ -23,7 +23,7 @@ function WrappedApp({ Component, pageProps }) {
 
 function MyApp ( {Component, pageProps} ) {
 
-  const {theme} = useStore().getState()
+  const theme = useSelector(state => state.theme)
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>

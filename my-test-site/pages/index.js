@@ -1,17 +1,21 @@
 import Button from '@material-ui/core/Button';
 import { useTheme } from '@material-ui/core/styles';
+import {useDispatch} from 'react-redux'
 
 export default function Home() {
-  const theme  = useTheme();
+  const dispatch = useDispatch()
+  const theme  = useTheme()
+
+  const toggleTheme = () => {dispatch({ type: 'TOGGLE_THEME'})}
 
   return (
     <div className='flex' style={{backgroundColor: theme.palette.secondary.main}}>
-    <Button variant="contained" color="primary" onClick = {()=>{}}>
+    <Button variant="contained" color="primary" onClick = {toggleTheme}>
       Switch Theme
     </Button>
 
 
-    <div style={{height:'100px', width:'200px'}}/>
+    <div style={{height:'1000rem', width:'1000rem'}}/>
     </div>
   )
 }
