@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 html,
 body {
   display: flex;
@@ -20,8 +21,24 @@ a {
 
 .appbar{
   margin-bottom: 10px;
-  
 }
+.appbarName{
+  display: flex;
+  font-family: 'Dancing Script', cursive;
+  padding-left: 7%;
+}
+.appbarItems{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 10%;
+}
+.aboutContainer{
+  display: flex;
+  padding: 10%;
+}
+
+
 
 
 
