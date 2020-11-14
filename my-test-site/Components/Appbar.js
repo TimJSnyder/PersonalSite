@@ -15,15 +15,15 @@ export default function Appbar(){
             <AppBar position="fixed">
                 <Toolbar variant="dense">
                     <h2 className='appbarName'>Tim Snyder</h2>
-                    <div className='appbarItems'>
-                    <h4><a className = 'effect-shine' href='' >About</a></h4>
-                    <h4><a className = 'effect-shine' href='' >Projects</a></h4>
-                    <h4><a className = 'effect-shine' href='' >Contact me</a></h4>
+                        <div className='appbarItems'>
+                        <h4><a className = 'effect-shine' href='' >About</a></h4>
+                        <h4><a className = 'effect-shine' href='' >Projects</a></h4>
+                        <h4><a className = 'effect-shine' href='' >Contact me</a></h4>
 
-                    <IconButton onClick = {toggleTheme}>
+                        <IconButton onClick = {toggleTheme}>
                         <Brightness2Icon />
-                    </IconButton>
-                    </div>
+                        </IconButton>
+                        </div>
                 </Toolbar>
             </AppBar>
 
