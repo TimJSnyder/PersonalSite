@@ -1,36 +1,34 @@
-import React from 'react'
+import React from 'react';
 import {
   Card,
   Container,
   CardActions,
   CardContent,
   Button,
-  Typography
+  Typography,
 } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 
-
-
-function ProjectCard(props) {
+function ProjectCard({ name, description }) {
   const theme = useTheme();
 
   return (
-    <Container className='cardContainer'>
+    <Container className="cardContainer">
       <Card
-        className='card'
+        className="card"
         variant="outlined"
         style={{
           backgroundColor: theme.palette.secondary.main,
-          color: theme.palette.secondary.contrastText
+          color: theme.palette.secondary.contrastText,
         }}
       >
         <CardContent>
-          <Typography className='cardTitle'>
-            {props.name}
+          <Typography className="cardTitle">
+            {name}
           </Typography>
-      
+
           <Typography variant="body2" component="p">
-            {props.description}
+            {description}
           </Typography>
         </CardContent>
 
@@ -45,4 +43,4 @@ function ProjectCard(props) {
   );
 }
 
-export default ProjectCard
+export default ProjectCard;

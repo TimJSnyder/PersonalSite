@@ -4,13 +4,13 @@ const theme = createMuiTheme({
   palette: {
     primary: {
       main: '#ffc4d0',
-      contrastText: 'black'
+      contrastText: 'black',
     },
     secondary: {
       main: '#fbf9fa',
-      contrastText: 'black'
-    }
-  }
+      contrastText: 'black',
+    },
+  },
 });
 
-export default theme
+export default theme;

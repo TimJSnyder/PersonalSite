@@ -1,24 +1,22 @@
-import cloneDeep from 'lodash.clonedeep'
+import cloneDeep from 'lodash.clonedeep';
 
 const initialState = {
-    theme: 'light'
-}
+  theme: 'light',
+};
 
-    const basicReducer = (state = initialState, {type, payload}) => {
+const basicReducer = (state = initialState, { type, payload }) => {
+  let newState;
+  switch (type) {
+    case 'TOGGLE_THEME':
+      newState = cloneDeep(state);
 
-    let newState;
-    switch(type) {
-        case 'TOGGLE_THEME':
-            newState = cloneDeep(state);
-            
-            newState.theme = state.theme === 'light' ? 'dark' : 'light'
+      newState.theme = state.theme === 'light' ? 'dark' : 'light';
 
-            return newState
+      return newState;
 
+    default:
+      return state;
+  }
+};
 
-        default:
-            return state;
-        }
-    }
-
-export default basicReducer
+export default basicReducer;

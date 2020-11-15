@@ -1,32 +1,32 @@
-import React from 'react'
+import React from 'react';
 
-export default function Leaves(){
-    return (
-        <div id="leaves">
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>     
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i> 
-        </div>
-    )
+export default function Leaves() {
+  return (
+    <div id="leaves">
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+      <i />
+    </div>
+  );
 }
