@@ -7,7 +7,7 @@ import list from './ProjectList'
 function ProjectsCard(){
     return (
         <div>
-            <h1>Projects</h1>
+            <h1 style={{textAlign:'center'}}>Projects</h1>
            {list.map((listItem) => 
             <Card 
             key={listItem.key}

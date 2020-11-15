@@ -36,10 +36,16 @@ a {
   display: flex;
   padding: 10%;
 }
+.cardContainer{
+  display: flex;
+}
 .footer{
   flex-grow: 1;
   text-align: center;
-  padding: 1.1%
+}
+.footerIcon{
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 
