@@ -7,32 +7,17 @@ import {
   Button,
   Typography
 } from '@material-ui/core';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { useTheme } from '@material-ui/core/styles';
 
-const useStyles = makeStyles({
-  root: {
-    flexDirection: 'row',
-    maxWidth: 375,
-    margin: '2%'
-  },
 
-  title: {
-    fontSize: 14,
-    fontWeight: 'bold'
-  },
-  pos: {
-    marginBottom: 12,
-  },
-})
 
 function ProjectCard(props) {
-  const classes = useStyles();
   const theme = useTheme();
 
   return (
     <Container className='cardContainer'>
       <Card
-        className={classes.root}
+        className='card'
         variant="outlined"
         style={{
           backgroundColor: theme.palette.secondary.main,
@@ -40,7 +25,7 @@ function ProjectCard(props) {
         }}
       >
         <CardContent>
-          <Typography className={classes.title}>
+          <Typography className='cardTitle'>
             {props.name}
           </Typography>
       

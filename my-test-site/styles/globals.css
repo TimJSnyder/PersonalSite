@@ -36,9 +36,6 @@ a {
   display: flex;
   padding: 10%;
 }
-.cardContainer{
-  display: flex;
-}
 .footer{
   flex-grow: 1;
   text-align: center;
@@ -46,6 +43,21 @@ a {
 .footerIcon{
   margin-left: 2%;
   margin-right: 2%;
+}
+.cardContainer{
+  flex-direction: row;
+  display: flex;
+  text-align: center;
+}
+.card{
+  margin: 2%;
+  max-width: 30%;
+  min-height: 200px;
+  float: left;
+}
+.cardTitle{
+    font-size: 14;
+    font-weight: bold
 }
 
 

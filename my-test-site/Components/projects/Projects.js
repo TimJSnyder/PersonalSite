@@ -9,7 +9,7 @@ function ProjectsCard() {
            {list.map((listItem) => (
                 <Card
                     key={listItem.key}
-                    name={listItem.name}
+                       name={listItem.name}
                     description={listItem.description}
                 />
             ))}

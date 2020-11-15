@@ -4,31 +4,33 @@ import IconButton from '@material-ui/core/IconButton';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import Link from '@material-ui/core/Link';
+import { useTheme } from '@material-ui/core/styles';
+
 
 
 
 
 export default function Footer(){
-    
-    return(
-        <div>
-            <AppBar position="static">
-                <div className='footer'>       
-                    <IconButton href=''>
-                        <GitHubIcon />
-                    </IconButton>
+	const theme = useTheme()
+    //totally does I was just having a brain fart
+    //btw Ill add you to the github repo so you can check shit out there too if you so desire
+	return(
+		<div>
+			<AppBar position="static">
+					<div  className='footer'>       
+						<IconButton href=''>
+								<GitHubIcon style={{color: theme.palette.secondary.contrastText}}/>
+						</IconButton>
 
-                    <IconButton href=''>
-                        <InstagramIcon />
-                    </IconButton>
+						<IconButton href=''>
+								<InstagramIcon style={{color: theme.palette.secondary.contrastText}} />
+						</IconButton>
 
-                    <IconButton href=''>
-                        <MailOutlineIcon />
-                    </IconButton>
-
-                </div>
-            </AppBar>
-        </div>
-    )
+						<IconButton href=''>
+								<MailOutlineIcon style={{color: theme.palette.secondary.contrastText}}/>
+						</IconButton>
+					</div>
+			</AppBar>
+		</div>
+	)
 }
