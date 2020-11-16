@@ -5,6 +5,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import { useTheme } from '@material-ui/core/styles';
+import CodeIcon from '@material-ui/icons/Code';
 
 export default function Footer() {
   const theme = useTheme();

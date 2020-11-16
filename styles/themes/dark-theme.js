@@ -9,6 +9,7 @@ const theme = createMuiTheme({
     secondary: {
       main: '#232931',
       contrastText: 'white',
+      card: '#18222b',
     },
   },
 });

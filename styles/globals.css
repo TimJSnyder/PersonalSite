@@ -17,44 +17,7 @@ a {
   box-sizing: border-box;
 }
 
-.appbarName {
-  font-family: "Dancing Script", cursive;
-}
-.appbarItems {
-  display: flex;
-  flex-direction: row;
-}
-.aboutContainer {
-  display: flex;
-}
-.footer {
-  text-align: center;
-}
-.footerIcon {
-  margin: 0 10px;
-}
 
-.effect-shine {
-  padding: 0 8px;
-}
-.effect-shine:hover {
-  cursor: pointer;
-  -webkit-mask-image: linear-gradient(
-    -75deg,
-    rgba(0, 0, 0, 0.6) 30%,
-    #000 50%,
-    rgba(0, 0, 0, 0.6) 70%
-  );
-  -webkit-mask-size: 200%;
-  animation: shine 2s infinite;
-}
 
-@-webkit-keyframes shine {
-  from {
-    -webkit-mask-position: 150%;
-  }
 
-  to {
-    -webkit-mask-position: -50%;
-  }
-}
+

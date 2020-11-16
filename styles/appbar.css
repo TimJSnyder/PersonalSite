@@ -1,0 +1,7 @@
+.appbarName {
+  font-family: "Dancing Script", cursive;
+}
+.appbarItems {
+  display: flex;
+  flex-direction: row;
+}

@@ -5,9 +5,14 @@ import lightTheme from '../styles/themes/light-theme';
 import darkTheme from '../styles/themes/dark-theme';
 
 import 'fontsource-roboto';
-import '../styles/layout.css';
+import '../styles/about.css';
+import '../styles/appbar.css';
 import '../styles/card.css';
+import '../styles/effectShine.css';
+import '../styles/footer.css';
 import '../styles/globals.css';
+import '../styles/layout.css';
+
 import { store, persistor } from '../redux/store';
 
 function WrappedApp({ Component, pageProps }) {

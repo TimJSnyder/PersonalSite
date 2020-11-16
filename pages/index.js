@@ -2,7 +2,6 @@ import { useTheme } from '@material-ui/core/styles';
 import Appbar from '../Components/Appbar';
 import About from '../Components/About';
 import Footer from '../Components/Footer';
-import Leaves from '../Components/Leaves';
 import ProjectsCard from '../Components/projects/Projects';
 
 export default function Home() {
@@ -19,7 +18,6 @@ export default function Home() {
       <div className="maxWidth">
         <Appbar />
         <About />
-        <Leaves />
         <ProjectsCard />
       </div>
 

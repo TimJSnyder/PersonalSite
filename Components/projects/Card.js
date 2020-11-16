@@ -4,38 +4,38 @@ import {
   Container,
   CardActions,
   CardContent,
-  Button,
-  Typography,
 } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
+import CodeIcon from '@material-ui/icons/Code';
+import IconButton from '@material-ui/core/IconButton';
 
 function ProjectCard({ name, description }) {
   const theme = useTheme();
 
   return (
-    <Container className="cardContainer">
+    <Container className="cardContainer textCenter">
       <Card
         className="card"
         variant="outlined"
         style={{
-          backgroundColor: theme.palette.secondary.main,
+          backgroundColor: theme.palette.secondary.card,
           color: theme.palette.secondary.contrastText,
         }}
       >
         <CardContent>
-          <Typography className="cardTitle">
+          <h4 className="cardTitle">
             {name}
-          </Typography>
+          </h4>
 
-          <Typography variant="body2" component="p">
+          <p variant="body2" className="cardDescription">
             {description}
-          </Typography>
+          </p>
         </CardContent>
 
         <CardActions>
-          <Button href="" size="small" variant="contained" disableElevation>
-            view source
-          </Button>
+          <IconButton>
+            <CodeIcon style={{ color: theme.palette.secondary.contrastText }} />
+          </IconButton>
         </CardActions>
 
       </Card>
