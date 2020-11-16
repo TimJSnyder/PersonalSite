@@ -3,6 +3,7 @@ import Appbar from '../Components/Appbar';
 import About from '../Components/About';
 import Footer from '../Components/Footer';
 import ProjectsCard from '../Components/projects/Projects';
+import Skills from '../Components/Skills'
 
 export default function Home() {
   const theme = useTheme();
@@ -18,6 +19,7 @@ export default function Home() {
       <div className="maxWidth">
         <Appbar />
         <About />
+        {/* <Skills /> */}
         <ProjectsCard />
       </div>
 

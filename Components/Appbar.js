@@ -20,6 +20,7 @@ export default function Appbar() {
             <h2 className="appbarName">Tim Snyder</h2>
             <div className="appbarItems">
               <h4 className="effect-shine">About</h4>
+              <h4 className="effect-shine">Skills</h4>
               <h4 className="effect-shine">Projects</h4>
               <h4 className="effect-shine">Contact me</h4>
 
