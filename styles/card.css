@@ -1,0 +1,12 @@
+.cardContainer {
+  flex-basis: 33%;
+  display: flex;
+}
+.card {
+  margin: 20px 0;
+  min-height: 200px;
+}
+.cardTitle {
+  font-size: 14;
+  font-weight: bold;
+}

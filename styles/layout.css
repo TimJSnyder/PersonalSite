@@ -1,4 +1,26 @@
-.flex{
-    
-    flex: 1;
+.flex {
+  flex: 1;
+}
+.flexWrap {
+  flex-wrap: wrap;
+  display: flex;
+}
+.textCenter {
+  text-align: center;
+}
+.maxWidth {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.appbarWrapper {
+  display: flex;
+  justify-content: center;
+}
+.appbarMaxWidth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 1000px;
 }

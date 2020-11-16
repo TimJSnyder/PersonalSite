@@ -13,23 +13,25 @@ export default function Appbar() {
   const theme = useSelector((state) => state.theme);
 
   return (
-    <div className="appbar">
+    <>
       <AppBar position="fixed">
-        <Toolbar variant="dense">
-          <h2 className="appbarName">Tim Snyder</h2>
-          <div className="appbarItems">
-            <h4><a className="effect-shine" href="">About</a></h4>
-            <h4><a className="effect-shine" href="">Projects</a></h4>
-            <h4><a className="effect-shine" href="">Contact me</a></h4>
+        <div className="appbarWrapper">
+          <div className="appbarMaxWidth">
+            <h2 className="appbarName">Tim Snyder</h2>
+            <div className="appbarItems">
+              <h4 className="effect-shine">About</h4>
+              <h4 className="effect-shine">Projects</h4>
+              <h4 className="effect-shine">Contact me</h4>
 
-            <IconButton onClick={toggleTheme}>
-              {theme === 'dark' ? <Brightness2Icon style={{ color: 'white' }} /> : <Brightness7Icon />}
-            </IconButton>
+              <IconButton onClick={toggleTheme}>
+                {theme === 'dark' ? <Brightness2Icon style={{ color: 'white' }} /> : <Brightness7Icon />}
+              </IconButton>
+            </div>
           </div>
-        </Toolbar>
+        </div>
       </AppBar>
 
       <Toolbar />
-    </div>
+    </>
   );
 }

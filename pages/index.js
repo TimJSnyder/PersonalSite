@@ -16,10 +16,13 @@ export default function Home() {
         color: theme.palette.secondary.contrastText,
       }}
     >
-      <Appbar />
-      <About />
-      <Leaves />
-      <ProjectsCard />
+      <div className="maxWidth">
+        <Appbar />
+        <About />
+        <Leaves />
+        <ProjectsCard />
+      </div>
+
       <Footer />
     </div>
   );

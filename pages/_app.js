@@ -6,6 +6,7 @@ import darkTheme from '../styles/themes/dark-theme';
 
 import 'fontsource-roboto';
 import '../styles/layout.css';
+import '../styles/card.css';
 import '../styles/globals.css';
 import { store, persistor } from '../redux/store';
 
