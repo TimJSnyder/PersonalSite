@@ -1,5 +1,8 @@
-.skillsContainer {
+.skills {
   justify-content: center;
+}
+.skillsContainer {
+  padding: 100px 10px 150px;
 }
 .skillsH2 {
   margin: 30px;

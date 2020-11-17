@@ -3,7 +3,8 @@ import Appbar from '../Components/Appbar';
 import About from '../Components/About';
 import Footer from '../Components/Footer';
 import ProjectsCard from '../Components/projects/Projects';
-import Skills from '../Components/Skills'
+import Skills from '../Components/Skills';
+import Copyright from '../Components/Copyright';
 
 export default function Home() {
   const theme = useTheme();
@@ -21,6 +22,7 @@ export default function Home() {
         <About />
         <Skills />
         <ProjectsCard />
+        <Copyright />
       </div>
 
       <Footer />

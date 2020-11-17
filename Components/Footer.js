@@ -9,7 +9,6 @@ import CodeIcon from '@material-ui/icons/Code';
 
 export default function Footer() {
   const theme = useTheme();
-
   const iconStyle = { color: theme.palette.secondary.contrastText };
 
   return (

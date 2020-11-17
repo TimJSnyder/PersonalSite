@@ -4,9 +4,9 @@ import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
 function Skills() {
   const circleColor = { color: '#64dd17' };
   return (
-    <>
-      <h1 className="textCenter">Skills</h1>
-      <div className="skillsContainer flexWrap">
+    <div className="skillsContainer">
+      <h1 className="textCenter">My Skills</h1>
+      <div className="skills flexWrap">
         <h2 className="skillsH2">
           HTML
           {' '}
@@ -42,8 +42,18 @@ function Skills() {
           {' '}
           <CheckCircleOutlineIcon style={circleColor} />
         </h2>
+        <h2 className="skillsH2">
+          Express
+          {' '}
+          <CheckCircleOutlineIcon style={circleColor} />
+        </h2>
+        <h2 className="skillsH2">
+          Bootstrap
+          {' '}
+          <CheckCircleOutlineIcon style={circleColor} />
+        </h2>
       </div>
-    </>
+    </div>
   );
 }
 
