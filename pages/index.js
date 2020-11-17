@@ -19,7 +19,7 @@ export default function Home() {
       <div className="maxWidth">
         <Appbar />
         <About />
-        {/* <Skills /> */}
+        <Skills />
         <ProjectsCard />
       </div>
 

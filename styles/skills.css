@@ -1,3 +1,7 @@
 .skillsContainer{
     display: flex;
+    flex-direction: row;
+}
+.skillsH3{
+    display: flex;
 }
