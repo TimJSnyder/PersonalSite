@@ -12,6 +12,8 @@ import '../styles/effectShine.css';
 import '../styles/footer.css';
 import '../styles/globals.css';
 import '../styles/layout.css';
+import '../styles/skills.css';
+import '../styles/textFade.css';
 
 import { store, persistor } from '../redux/store';
 

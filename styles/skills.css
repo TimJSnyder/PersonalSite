@@ -1,7 +1,6 @@
-.skillsContainer{
-    display: flex;
-    flex-direction: row;
+.skillsContainer {
+  justify-content: center;
 }
-.skillsH3{
-    display: flex;
+.skillsH2 {
+  margin: 30px;
 }

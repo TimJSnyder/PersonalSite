@@ -1,7 +1,10 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
+import {
+  AppBar,
+  Toolbar,
+  Tooltip,
+  IconButton,
+} from '@material-ui/core/';
 import { useDispatch, useSelector } from 'react-redux';
 
 import Brightness2Icon from '@material-ui/icons/Brightness2';
@@ -23,10 +26,11 @@ export default function Appbar() {
               <h4 className="effect-shine">Skills</h4>
               <h4 className="effect-shine">Projects</h4>
               <h4 className="effect-shine">Contact me</h4>
-
-              <IconButton onClick={toggleTheme}>
-                {theme === 'dark' ? <Brightness2Icon style={{ color: 'white' }} /> : <Brightness7Icon />}
-              </IconButton>
+              <Tooltip title="Change Theme">
+                <IconButton onClick={toggleTheme}>
+                  {theme === 'dark' ? <Brightness2Icon style={{ color: 'white' }} /> : <Brightness7Icon />}
+                </IconButton>
+              </Tooltip>
             </div>
           </div>
         </div>

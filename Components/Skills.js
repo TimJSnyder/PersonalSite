@@ -1,21 +1,50 @@
-import React from 'react'
-import Container from '@material-ui/core/Container'
+import React from 'react';
 import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
 
-function Skills(){
-    return (
-        <Container className="skillsContainer textCenter">
-         <h1>Skills</h1>
-         <div className="skillsH3">
-        <h3>Javascript <CheckCircleOutlineIcon /></h3> 
-        <h3>Javascript <CheckCircleOutlineIcon /></h3> 
-        <h3>Javascript <CheckCircleOutlineIcon /></h3> 
-        <h3>Javascript <CheckCircleOutlineIcon /></h3> 
-        <h3>Javascript <CheckCircleOutlineIcon /></h3> 
-        <h3>Javascript <CheckCircleOutlineIcon /></h3> 
-        </div>
-        </Container>
-    )
+function Skills() {
+  const circleColor = { color: '#64dd17' };
+  return (
+    <>
+      <h1 className="textCenter">Skills</h1>
+      <div className="skillsContainer flexWrap">
+        <h2 className="skillsH2">
+          HTML
+          {' '}
+          <CheckCircleOutlineIcon style={circleColor} />
+        </h2>
+        <h2 className="skillsH2">
+          CSS
+          {' '}
+          <CheckCircleOutlineIcon style={circleColor} />
+        </h2>
+        <h2 className="skillsH2">
+          Javascript
+          {' '}
+          <CheckCircleOutlineIcon style={circleColor} />
+        </h2>
+        <h2 className="skillsH2">
+          NodeJS
+          {' '}
+          <CheckCircleOutlineIcon style={circleColor} />
+        </h2>
+        <h2 className="skillsH2">
+          MongoDB
+          {' '}
+          <CheckCircleOutlineIcon style={circleColor} />
+        </h2>
+        <h2 className="skillsH2">
+          MaterialUI
+          {' '}
+          <CheckCircleOutlineIcon style={circleColor} />
+        </h2>
+        <h2 className="skillsH2">
+          React
+          {' '}
+          <CheckCircleOutlineIcon style={circleColor} />
+        </h2>
+      </div>
+    </>
+  );
 }
 
-export default Skills
+export default Skills;
