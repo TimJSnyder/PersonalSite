@@ -29,7 +29,7 @@ export default function Mail() {
         <MailOutlineIcon style={iconStyle} />
       </IconButton>
       <Dialog open={open} onClose={handleClose} className="textCenter">
-        <DialogTitle>Send me an Email</DialogTitle>
+        <DialogTitle>Send me an email</DialogTitle>
         <DialogContent>
           <TextField
             autoFocus

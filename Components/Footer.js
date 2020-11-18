@@ -1,7 +1,7 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import InstagramIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/Twitter';
 import IconButton from '@material-ui/core/IconButton';
 import { useTheme } from '@material-ui/core/styles';
 import Mail from './Mail';
@@ -16,12 +16,11 @@ export default function Footer() {
         <IconButton href="https://github.com/TimJSnyder" target="_blank">
           <GitHubIcon style={iconStyle} />
         </IconButton>
-
-        <IconButton href="" target="_blank">
-          <InstagramIcon style={iconStyle} />
+        <Mail />
+        <IconButton href="https://twitter.com/TimSnyd10543254" target="_blank">
+          <TwitterIcon style={iconStyle} />
         </IconButton>
 
-        <Mail />
       </div>
     </AppBar>
   );

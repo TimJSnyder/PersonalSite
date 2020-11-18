@@ -1,7 +1,7 @@
 import cloneDeep from 'lodash.clonedeep';
 
 const initialState = {
-  theme: 'light',
+  theme: 'dark',
 };
 
 const basicReducer = (state = initialState, { type, payload }) => {
