@@ -10,6 +10,8 @@ import {
 } from '@material-ui/core';
 import CodeIcon from '@material-ui/icons/Code';
 
+// Cards made with material ui and take in the props name and description from projects.js
+
 function ProjectCard({ name, description }) {
   const theme = useTheme();
 
