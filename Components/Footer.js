@@ -1,11 +1,10 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
-import IconButton from '@material-ui/core/IconButton';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import IconButton from '@material-ui/core/IconButton';
 import { useTheme } from '@material-ui/core/styles';
-import CodeIcon from '@material-ui/icons/Code';
+import Mail from './Mail';
 
 export default function Footer() {
   const theme = useTheme();
@@ -13,18 +12,16 @@ export default function Footer() {
 
   return (
     <AppBar position="static">
-      <div className="footer">
-        <IconButton href="">
+      <div className="textCenter">
+        <IconButton href="https://github.com/TimJSnyder" target="_blank">
           <GitHubIcon style={iconStyle} />
         </IconButton>
 
-        <IconButton href="">
+        <IconButton href="" target="_blank">
           <InstagramIcon style={iconStyle} />
         </IconButton>
 
-        <IconButton href="">
-          <MailOutlineIcon style={iconStyle} />
-        </IconButton>
+        <Mail />
       </div>
     </AppBar>
   );

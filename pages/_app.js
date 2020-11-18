@@ -9,7 +9,6 @@ import '../styles/about.css';
 import '../styles/appbar.css';
 import '../styles/card.css';
 import '../styles/effectShine.css';
-import '../styles/footer.css';
 import '../styles/globals.css';
 import '../styles/layout.css';
 import '../styles/skills.css';

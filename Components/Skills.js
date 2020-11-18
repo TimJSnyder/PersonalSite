@@ -1,57 +1,44 @@
 import React from 'react';
-import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
+import Rating from '@material-ui/lab/Rating';
+import Box from '@material-ui/core/Box';
 
 function Skills() {
-  const circleColor = { color: '#64dd17' };
   return (
     <div className="skillsContainer">
       <h1 className="textCenter">My Skills</h1>
-      <div className="skills flexWrap">
-        <h2 className="skillsH2">
-          HTML
-          {' '}
-          <CheckCircleOutlineIcon style={circleColor} />
-        </h2>
-        <h2 className="skillsH2">
-          CSS
-          {' '}
-          <CheckCircleOutlineIcon style={circleColor} />
-        </h2>
-        <h2 className="skillsH2">
-          Javascript
-          {' '}
-          <CheckCircleOutlineIcon style={circleColor} />
-        </h2>
-        <h2 className="skillsH2">
-          NodeJS
-          {' '}
-          <CheckCircleOutlineIcon style={circleColor} />
-        </h2>
-        <h2 className="skillsH2">
-          MongoDB
-          {' '}
-          <CheckCircleOutlineIcon style={circleColor} />
-        </h2>
-        <h2 className="skillsH2">
-          MaterialUI
-          {' '}
-          <CheckCircleOutlineIcon style={circleColor} />
-        </h2>
-        <h2 className="skillsH2">
-          React
-          {' '}
-          <CheckCircleOutlineIcon style={circleColor} />
-        </h2>
-        <h2 className="skillsH2">
-          Express
-          {' '}
-          <CheckCircleOutlineIcon style={circleColor} />
-        </h2>
-        <h2 className="skillsH2">
-          Bootstrap
-          {' '}
-          <CheckCircleOutlineIcon style={circleColor} />
-        </h2>
+      <div className="skills flexWrap textCenter">
+        <Box component="fieldset" mb={3} borderColor="transparent">
+          <h2>HTML</h2>
+          <Rating value={5} readOnly />
+        </Box>
+        <Box component="fieldset" mb={5} borderColor="transparent">
+          <h2>CSS</h2>
+          <Rating value={5} readOnly />
+        </Box>
+        <Box component="fieldset" mb={3} borderColor="transparent">
+          <h2>Javascript</h2>
+          <Rating value={4} readOnly />
+        </Box>
+        <Box component="fieldset" mb={3} borderColor="transparent">
+          <h2>Bootstrap</h2>
+          <Rating value={4} readOnly />
+        </Box>
+        <Box component="fieldset" mb={3} borderColor="transparent">
+          <h2>MaterialUI</h2>
+          <Rating value={4} readOnly />
+        </Box>
+        <Box component="fieldset" mb={3} borderColor="transparent">
+          <h2>NodeJs</h2>
+          <Rating value={3} readOnly />
+        </Box>
+        <Box component="fieldset" mb={3} borderColor="transparent">
+          <h2>Express</h2>
+          <Rating value={3} readOnly />
+        </Box>
+        <Box component="fieldset" mb={3} borderColor="transparent">
+          <h2>React</h2>
+          <Rating value={2} readOnly />
+        </Box>
       </div>
     </div>
   );
