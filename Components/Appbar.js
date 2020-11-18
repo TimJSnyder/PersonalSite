@@ -7,6 +7,7 @@ import {
 } from '@material-ui/core/';
 import Brightness2Icon from '@material-ui/icons/Brightness2';
 import Brightness7Icon from '@material-ui/icons/Brightness7';
+import { Link } from 'react-scroll';
 import { useDispatch, useSelector } from 'react-redux';
 
 export default function Appbar() {
@@ -21,10 +22,10 @@ export default function Appbar() {
           <div className="appbarMaxWidth">
             <h2 className="appbarName">Tim Snyder</h2>
             <div className="appbarItems">
-              <h4 className="effect-shine">About</h4>
-              <h4 className="effect-shine">Skills</h4>
-              <h4 className="effect-shine">Projects</h4>
-              <h4 className="effect-shine">Contact me</h4>
+              <Link to="about" smooth className="effect-shine"><h4>About</h4></Link>
+              <Link to="skills" smooth className="effect-shine"><h4>Skills</h4></Link>
+              <Link to="projects" smooth className="effect-shine"><h4>Projects</h4></Link>
+              <Link to="contact" smooth className="effect-shine"><h4>Contact me</h4></Link>
               <Tooltip title="Change Theme">
                 <IconButton onClick={toggleTheme}>
                   {theme === 'dark' ? <Brightness2Icon style={{ color: 'white' }} /> : <Brightness7Icon />}

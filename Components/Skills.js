@@ -5,7 +5,7 @@ import Box from '@material-ui/core/Box';
 function Skills() {
   return (
     <div className="skillsContainer">
-      <h1 className="textCenter">My Skills</h1>
+      <h1 id="skills" className="textCenter">My Skills</h1>
       <div className="skills flexWrap textCenter">
         <Box component="fieldset" mb={3} borderColor="transparent">
           <h2>HTML</h2>
@@ -13,7 +13,7 @@ function Skills() {
         </Box>
         <Box component="fieldset" mb={5} borderColor="transparent">
           <h2>CSS</h2>
-          <Rating value={5} readOnly />
+          <Rating value={4} readOnly />
         </Box>
         <Box component="fieldset" mb={3} borderColor="transparent">
           <h2>Javascript</h2>

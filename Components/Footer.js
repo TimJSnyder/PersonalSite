@@ -8,7 +8,7 @@ export default function Footer() {
   const iconStyle = { color: theme.palette.secondary.contrastText };
 
   return (
-    <AppBar position="static">
+    <AppBar id="contact" position="static">
       <div className="textCenter">
         <IconButton href="https://github.com/TimJSnyder" target="_blank">
           <GitHubIcon style={iconStyle} />
