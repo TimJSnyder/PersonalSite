@@ -5,10 +5,9 @@ import {
   Tooltip,
   IconButton,
 } from '@material-ui/core/';
-import { useDispatch, useSelector } from 'react-redux';
-
 import Brightness2Icon from '@material-ui/icons/Brightness2';
 import Brightness7Icon from '@material-ui/icons/Brightness7';
+import { useDispatch, useSelector } from 'react-redux';
 
 export default function Appbar() {
   const dispatch = useDispatch();

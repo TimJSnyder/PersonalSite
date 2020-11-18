@@ -1,9 +1,6 @@
-import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
+import { AppBar, useTheme, IconButton } from '@material-ui/core/';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import IconButton from '@material-ui/core/IconButton';
-import { useTheme } from '@material-ui/core/styles';
 import Mail from './Mail';
 
 export default function Footer() {
