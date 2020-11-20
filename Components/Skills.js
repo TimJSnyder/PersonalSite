@@ -15,12 +15,12 @@ function Skills() {
           <Rating value={4} readOnly />
         </Box>
         <Box component="fieldset" mb={3} borderColor="transparent">
-          <h2>Javascript</h2>
+          <h2>Bootstrap</h2>
           <Rating value={4} readOnly />
         </Box>
         <Box component="fieldset" mb={3} borderColor="transparent">
-          <h2>Bootstrap</h2>
-          <Rating value={4} readOnly />
+          <h2>Javascript</h2>
+          <Rating value={3} readOnly />
         </Box>
         <Box component="fieldset" mb={3} borderColor="transparent">
           <h2>MaterialUI</h2>
