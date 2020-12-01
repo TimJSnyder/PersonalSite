@@ -2,6 +2,7 @@ import Container from '@material-ui/core/Container';
 
 export default function About() {
   return (
+
     <div id="about">
       <Container className="aboutContainer">
         <h1 className="textCenter">About Me</h1>
@@ -15,6 +16,7 @@ export default function About() {
           me anytime :)
         </p>
       </Container>
+
     </div>
   );
 }

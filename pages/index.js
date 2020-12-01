@@ -1,5 +1,6 @@
 import { useTheme } from '@material-ui/core/styles';
 import Head from 'next/head';
+import { SnackbarProvider } from 'notistack';
 import Appbar from '../Components/Appbar';
 import About from '../Components/About';
 import Footer from '../Components/Footer';
@@ -12,27 +13,35 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>TimSnyer.io</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-      <div
-        className="flex"
-        style={{
-          backgroundColor: theme.palette.secondary.main,
-          color: theme.palette.secondary.contrastText,
+      <SnackbarProvider
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'center',
         }}
       >
-        <div className="maxWidth">
-          <Appbar />
-          <About />
-          <Skills />
-          <ProjectsCard />
-          <Copyright />
-        </div>
+        <Head>
+          <title>Tim Snyder</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
+        <div
+          className="flex"
+          style={{
+            backgroundColor: theme.palette.secondary.main,
+            color: theme.palette.secondary.contrastText,
+          }}
+        >
+          <div className="maxWidth">
+            <Appbar />
+            <About />
+            <Skills />
+            <ProjectsCard />
+            <Copyright />
+          </div>
 
-        <Footer />
-      </div>
+          <Footer />
+
+        </div>
+      </SnackbarProvider>
     </>
   );
 }

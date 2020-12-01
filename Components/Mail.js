@@ -11,10 +11,11 @@ import {
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import { useState } from 'react';
 import axios from 'axios';
+import { withSnackbar, useSnackbar } from 'notistack';
 
 const BASE_URL = 'https://v9fq8p6ad9.execute-api.us-west-2.amazonaws.com/';
 
-export default function Mail() {
+function Mail() {
   const theme = useTheme();
   const iconStyle = { color: theme.palette.secondary.contrastText };
   const [open, setOpen] = useState(false);
@@ -22,6 +23,7 @@ export default function Mail() {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const { enqueueSnackbar } = useSnackbar();
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -37,9 +39,15 @@ export default function Mail() {
     setSubject('');
   };
 
+  const errorMsg = 'Please fill in all fields';
+  const successMsg = 'Great! Ill get back to you shortly';
+
   const handleSend = async () => {
     if (!name || !email || !subject || !message) {
-      window.alert('Please fill out all fields');
+      enqueueSnackbar(errorMsg, {
+        variant: 'warning',
+        autoHideDuration: 3000,
+      });
       return;
     }
     try {
@@ -48,10 +56,13 @@ export default function Mail() {
         name, email, subject, message,
       };
       const headers = { 'content-type': 'application/json' };
-
       const response = await axios.post(BASE_URL, data, { headers });
       console.log(response);
       setOpen(false);
+      enqueueSnackbar(successMsg, {
+        variant: 'success',
+        autoHideDuration: 3000,
+      });
     } catch (error) {
       console.error(error);
       setOpen(false);
@@ -64,7 +75,7 @@ export default function Mail() {
         <MailOutlineIcon style={iconStyle} />
       </IconButton>
       <Dialog open={open} onClose={handleClose} className="textCenter">
-        <DialogTitle>Send me an email</DialogTitle>
+        <DialogTitle>Send me an email :)</DialogTitle>
         <DialogContent>
           <TextField
             value={name}
@@ -76,6 +87,7 @@ export default function Mail() {
           <TextField
             value={email}
             onChange={({ target }) => setEmail(target.value)}
+            type="email"
             autoFocus
             margin="dense"
             label="Your Email"
@@ -112,3 +124,5 @@ export default function Mail() {
     </>
   );
 }
+
+export default withSnackbar(Mail);

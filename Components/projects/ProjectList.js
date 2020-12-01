@@ -7,32 +7,20 @@ const list = [
   },
   {
     key: 2,
-    name: 'Discord Bot',
+    name: 'School Project',
     description: 'ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
     link: 'https://github.com/ItsTeeJay',
   },
   {
     key: 3,
-    name: 'School Project',
-    description: 'ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-    link: 'https://github.com/ItsTeeJay',
-  },
-  {
-    key: 4,
-    name: 'School Project',
-    description: 'ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-    link: 'https://github.com/ItsTeeJay',
-  },
-  {
-    key: 5,
     name: 'CSS Personal Website',
-    description: 'the second step in web development for me was CSS. This site was built with only HTML and CSS',
+    description: 'The next step in web development for me was CSS. Adding styles to a site was super cool and continued to pique my interest.',
     link: 'https://github.com/TimJSnyder/CSS',
   },
   {
-    key: 6,
+    key: 4,
     name: 'First HTML Site',
-    description: 'This is the begining of my path to learning web development, from a basic Hello World to my first personal site',
+    description: 'This is the begining of my path to learning web development, a basic html website that started as a hello world',
     link: 'https://github.com/TimJSnyder/HTML-Site',
   },
 
