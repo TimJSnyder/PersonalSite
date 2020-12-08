@@ -16,7 +16,7 @@ function ProjectCard({ name, description }) {
   const theme = useTheme();
 
   return (
-    <Container className="cardContainer textCenter">
+    <Container className="cardContainer textCenter ">
       <Card
         className="card"
         variant="outlined"

@@ -4,7 +4,7 @@ export default function About() {
   return (
 
     <div id="about">
-      <Container className="aboutContainer">
+      <Container className="aboutContainer padding">
         <h1 className="textCenter">About Me</h1>
         <p className="aboutParagraph">
           Hello! My name is Tim Snyder. I am currently a student at Bellevue College,

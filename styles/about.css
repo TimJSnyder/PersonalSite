@@ -1,6 +1,5 @@
 .aboutContainer {
   display: flex;
-  padding: 50px 10px;
 }
 .aboutParagraph {
   line-height: 30px;

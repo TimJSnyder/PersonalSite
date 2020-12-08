@@ -6,3 +6,15 @@
   display: flex;
   flex-direction: row;
 }
+.appbarWrapper {
+  display: flex;
+  justify-content: center;
+}
+.appbarMaxWidth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 1000px;
+}

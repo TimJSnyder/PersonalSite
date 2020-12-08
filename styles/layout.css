@@ -12,15 +12,6 @@
   max-width: 1000px;
   margin: 0 auto;
 }
-.appbarWrapper {
-  display: flex;
-  justify-content: center;
-}
-.appbarMaxWidth {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  width: 100%;
-  max-width: 1000px;
+.padding {
+  padding: 300px 0;
 }

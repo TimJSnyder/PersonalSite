@@ -7,6 +7,7 @@ import Footer from '../Components/Footer';
 import ProjectsCard from '../Components/projects/Projects';
 import Skills from '../Components/Skills';
 import Copyright from '../Components/Copyright';
+import Leaves from '../Components/Leaves';
 
 export default function Home() {
   const theme = useTheme();
@@ -32,6 +33,7 @@ export default function Home() {
         >
           <div className="maxWidth">
             <Appbar />
+            <Leaves />
             <About />
             <Skills />
             <ProjectsCard />
