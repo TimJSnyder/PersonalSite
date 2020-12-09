@@ -13,6 +13,7 @@ import '../styles/globals.css';
 import '../styles/layout.css';
 import '../styles/skills.css';
 import '../styles/leaves.css';
+import '../styles/copyright.css';
 
 import { store, persistor } from '../redux/store';
 

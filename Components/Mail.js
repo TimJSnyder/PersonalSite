@@ -113,10 +113,10 @@ function Mail() {
           />
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} color="primary">
+          <Button onClick={handleClose} color="primary" variant="outlined">
             Cancel
           </Button>
-          <Button onClick={handleSend} color="primary">
+          <Button onClick={handleSend} color="primary" variant="contained">
             Send
           </Button>
         </DialogActions>

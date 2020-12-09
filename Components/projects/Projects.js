@@ -1,9 +1,6 @@
 import Card from './Card';
 import list from './ProjectList';
 
-// Grabs info from projectslist.js and maps the info to the cards.
-// The ID here will direct the appbar button where to scroll to
-
 function ProjectsCard() {
   return (
     <>
@@ -15,6 +12,7 @@ function ProjectsCard() {
             key={listItem.key}
             name={listItem.name}
             description={listItem.description}
+            link={listItem.link}
           />
         ))}
       </div>

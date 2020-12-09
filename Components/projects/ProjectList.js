@@ -2,8 +2,8 @@ const list = [
   {
     key: 1,
     name: 'Personal site',
-    description: 'ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-    link: 'https://github.com/ItsTeeJay',
+    description: 'This website was my first project working with NextJS and MaterialUI, also my first deployed React project!',
+    link: 'https://github.com/TimJSnyder/PersonalSite',
   },
   {
     key: 2,

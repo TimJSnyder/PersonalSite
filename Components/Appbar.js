@@ -10,11 +10,6 @@ import Brightness7Icon from '@material-ui/icons/Brightness7';
 import { Link } from 'react-scroll';
 import { useDispatch, useSelector } from 'react-redux';
 
-// Dispatch and useSelector grab the theme and allow the button to toggle it
-// The <Links> use npm package react-scroll to scroll to ID's on the page
-// Offset and smooth make the scroll more aesthetically pleasing
-// The Ternary Operator changed the Icon based on the theme
-
 export default function Appbar() {
   const dispatch = useDispatch();
   const toggleTheme = () => { dispatch({ type: 'TOGGLE_THEME' }); };

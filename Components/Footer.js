@@ -15,13 +15,13 @@ export default function Footer() {
   return (
     <AppBar id="contact" position="static">
       <div className="textCenter">
-        <Tooltip title="GitHub" placement="left-start" arrow>
+        <Tooltip title="GitHub" placement="left" arrow>
           <IconButton href="https://github.com/TimJSnyder" target="_blank">
             <GitHubIcon style={iconStyle} />
           </IconButton>
         </Tooltip>
         <Mail />
-        <Tooltip title="Twitter" placement="right-start" arrow>
+        <Tooltip title="Twitter" placement="right" arrow>
           <IconButton href="https://twitter.com/TimSnyd10543254" target="_blank">
             <TwitterIcon style={iconStyle} />
           </IconButton>
