@@ -116,7 +116,7 @@ function Mail() {
           <Button onClick={handleClose} color="primary" variant="outlined">
             Cancel
           </Button>
-          <Button onClick={handleSend} color="primary" variant="contained">
+          <Button onClick={handleSend} color="primary" variant="contained" disableElevation>
             Send
           </Button>
         </DialogActions>

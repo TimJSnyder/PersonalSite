@@ -5,7 +5,7 @@ function ProjectsCard() {
   return (
     <>
       <h1 id="projects" className="textCenter">Projects</h1>
-      <p className="textCenter">Check out everything from my first HTML webpage to my current projects</p>
+      <p className="textCenter">Check out everything from my first HTML webpage to my current projects!</p>
       <div className="flexWrap">
         {list.map((listItem) => (
           <Card

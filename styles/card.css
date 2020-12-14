@@ -5,6 +5,8 @@
 }
 .card {
   min-height: 250px;
+  max-height: 250px;
+  display: flex;
 }
 .cardTitle {
   font-size: 14;

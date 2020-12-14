@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Card,
   Container,
-  CardActions,
   CardContent,
   Tooltip,
   useTheme,
@@ -34,15 +33,6 @@ function ProjectCard({ name, description, link }) {
               {description}
             </p>
           </CardContent>
-
-          <CardActions>
-            <Tooltip title="View on Github">
-              <IconButton href={link} target="_blank">
-                <CodeIcon style={{ color: theme.palette.secondary.contrastText }} />
-              </IconButton>
-            </Tooltip>
-          </CardActions>
-
         </Card>
       </Slide>
     </Container>

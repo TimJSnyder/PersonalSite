@@ -12,7 +12,9 @@ import { useDispatch, useSelector } from 'react-redux';
 
 export default function Appbar() {
   const dispatch = useDispatch();
-  const toggleTheme = () => { dispatch({ type: 'TOGGLE_THEME' }); };
+  const toggleTheme = () => {
+    dispatch({ type: 'TOGGLE_THEME' });
+  };
   const theme = useSelector((state) => state.theme);
 
   return (

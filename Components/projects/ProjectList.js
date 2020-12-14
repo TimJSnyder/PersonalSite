@@ -1,15 +1,15 @@
 const list = [
   {
     key: 1,
-    name: 'Personal site',
+    name: 'Personal Site',
     description: 'This website was my first project working with NextJS and MaterialUI, also my first deployed React project!',
     link: 'https://github.com/TimJSnyder/PersonalSite',
   },
   {
     key: 2,
-    name: 'School Project',
-    description: 'ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-    link: 'https://github.com/ItsTeeJay',
+    name: 'Notes App',
+    description: 'This was a project I made while learning react and then I threw on some fun styles once I was done!',
+    link: 'https://github.com/TimJSnyder/Notes',
   },
   {
     key: 3,
