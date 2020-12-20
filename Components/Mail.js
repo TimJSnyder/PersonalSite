@@ -40,7 +40,7 @@ function Mail() {
   };
 
   const errorMsg = 'Please fill in all fields';
-  const successMsg = 'Great! Ill get back to you shortly';
+  const successMsg = "Great! I'll get back to you shortly";
 
   const handleSend = async () => {
     if (!name || !email || !subject || !message) {

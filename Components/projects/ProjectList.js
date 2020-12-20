@@ -21,7 +21,7 @@ const list = [
     key: 4,
     name: 'First HTML Site',
     description: 'This is the begining of my path to learning web development, a basic html website that started as a hello world',
-    link: 'https://github.com/TimJSnyder/HTML-Site',
+    link: 'https://timjsnyder.github.io/HTML-Site/',
   },
 
 ];

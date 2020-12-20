@@ -3,11 +3,9 @@ import {
   Card,
   Container,
   CardContent,
-  Tooltip,
+  Link,
   useTheme,
-  IconButton,
 } from '@material-ui/core';
-import CodeIcon from '@material-ui/icons/Code';
 import Slide from 'react-reveal/Slide';
 
 function ProjectCard({ name, description, link }) {
@@ -25,10 +23,11 @@ function ProjectCard({ name, description, link }) {
           }}
         >
           <CardContent>
-            <h4 className="cardTitle">
-              {name}
-            </h4>
-
+            <Link href={link} style={{ color: theme.palette.secondary.contrastText }} target="__blank">
+              <h4 className="cardTitle effect-shine">
+                {name}
+              </h4>
+            </Link>
             <p variant="body2" className="cardDescription">
               {description}
             </p>

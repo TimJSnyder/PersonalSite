@@ -4,3 +4,8 @@
 .skillsContainer {
   padding: 300px 100px 300px;
 }
+@media (max-width: 800px) {
+  .skillsContainer {
+    padding: 150px 0px;
+  }
+}
