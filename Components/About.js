@@ -5,7 +5,7 @@ export default function About() {
 
     <div id="about">
       <Container className="aboutContainer padding">
-        <h1 className="textCenter">hi Andrew this does update from my github</h1>
+        <h1 className="textCenter">About Me</h1>
         <p className="aboutParagraph">
           Hello! My name is Tim Snyder, welcome to my website. I initially started
           this project as a way to learn NextJS and MaterialUI, but I ended up
