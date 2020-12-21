@@ -18,3 +18,19 @@
   width: 100%;
   max-width: 1000px;
 }
+@media (max-width: 600px) {
+  .appbarMaxWidth {
+    display: flex;
+    flex-direction: row;
+  }
+  .appbarWrapper {
+    display: flex;
+    text-align: center;
+  }
+  .appbarName {
+    position: absolute;
+  }
+  .appbarItems {
+    visibility: hidden;
+  }
+}

@@ -24,10 +24,10 @@ export default function Appbar() {
           <div className="appbarMaxWidth">
             <h2 className="appbarName">Tim Snyder</h2>
             <div className="appbarItems">
-              <Link offset={-90} to="about" smooth className="effect-shine"><h4>About</h4></Link>
-              <Link offset={-90} to="skills" smooth className="effect-shine"><h4>Skills</h4></Link>
-              <Link offset={-90} to="projects" smooth className="effect-shine"><h4>Projects</h4></Link>
-              <Link offset={-90} to="contact" smooth className="effect-shine"><h4>Contact me</h4></Link>
+              <Link offset={-90} to="about" smooth className="effect-shine appbarLink"><h4>About</h4></Link>
+              <Link offset={-90} to="skills" smooth className="effect-shine appbarLink"><h4>Skills</h4></Link>
+              <Link offset={-90} to="projects" smooth className="effect-shine appbarLink"><h4>Projects</h4></Link>
+              <Link offset={-90} to="contact" smooth className="effect-shine appbarLink"><h4>Contact me</h4></Link>
               <Tooltip title="Change Theme">
                 <IconButton onClick={toggleTheme}>
                   {theme === 'dark' ? <Brightness2Icon style={{ color: 'white' }} /> : <Brightness7Icon />}
