@@ -9,7 +9,7 @@ const list = [
     key: 2,
     name: 'Notes App',
     description: 'This was a project I made while learning react and then I threw on some fun styles once I was done!',
-    link: 'https://github.com/TimJSnyder/Notes',
+    link: 'https://notes-umber-rho.vercel.app/',
   },
   {
     key: 3,
