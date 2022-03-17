@@ -15,10 +15,7 @@ export default function About() {
           online and reading documentation. By doing this, I discovered a
           passion for learning new frameworks and languages as well as making
           awesome projects. Alongside teaching myself I am also pursuing a
-          formal education in computer science at Bellevue College.
-          Outside of school, I work at a non-profit that provides childcare
-          to families in need as well as doing part-time warehouse work on
-          the weekends.
+          Bachelor's degree at Bellevue College. 
         </p>
       </Container>
 
